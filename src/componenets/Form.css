@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main-form-div{
+    width: 100%;
+    min-height:100vh;
+    background-image: url(../images/bg-iMAGE2.png); 
+    background-repeat: no-repeat;
+    background-size:100%,100%;
+    background-position:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:2rem;
+}
+.form-title{
+    width:30rem;
+    height: 8rem;
+    background-color:#fa8840;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1.2rem;
+    color: white;
+    h1{
+        font-family:"Playfair Display", serif;
+        font-size:4rem;
+    }
+}
+
+.form-content{
+    width: 30rem;
+    min-height: 25rem;
+    background-color: white;
+    border-radius: 1.2rem;
+    padding: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+   display: flex;
+   flex-direction: column;
+   gap:0.5rem;
+   label{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+   }
+   input{
+    height:2.6rem;
+    border:solid 1px rgba(0, 0, 0, 0.295);
+    border-radius: 6px;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    font-size: 1.2rem;
+    padding: 5px;
+   }
+   button{
+    width: 8rem;
+    height: 3rem;
+    border-radius: 2rem;
+    background-color: #fa8840;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+   }
+   button:hover{
+    background-color: #fa6540;
+   }
+}
+
+@media screen and (max-width:720px){
+    .form-title{
+        width:100%;
+    }
+    .form-content{
+        width:100%;
+    }
+
+}
